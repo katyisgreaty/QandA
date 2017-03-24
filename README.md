@@ -5,7 +5,9 @@ A short introduction of this app could easily go here.
 
 ##Known Bugs
 
-* Update question function does not work
+* Update question button is in an awkward place, but it can't be moved up without putting it in the question-detail file, which then makes the function not work
+* Save Answer doesn't work on individual question page
+* Answer's won't show up on individual question page
 
 ## Prerequisites
 
