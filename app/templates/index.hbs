@@ -2,7 +2,11 @@
 
 <ol>
   {{#each model.questions as |question|}}
-    {{question-tile question=question}}
+  <div class="panel panel-default my-panel">
+    <div class="panel-body">
+      {{question-tile question=question}}
+    </div>
+  </div>
   {{/each}}
 </ol>
 
@@ -12,6 +16,6 @@
 
 <ul>
   {{#each model.answers as |answer|}}
-    <li>{{answer-tile answer=answer}}</li>
+  <li>{{answer-tile answer=answer}}</li>
   {{/each}}
 </ul>

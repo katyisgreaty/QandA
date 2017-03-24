@@ -1,6 +1,10 @@
 #navigation {
   max-height: 330px;
-  background-color: #DFF8F0;
+  background: white;
+  /*background: -webkit-linear-gradient(left, white, #65DFB9);
+  background: -o-linear-gradient(right, white, #65DFB9);
+  background: -moz-linear-gradient(right, white, #65DFB9);
+  background: linear-gradient(to right, white, #65DFB9);*/
   border: none;
 }
 
@@ -38,7 +42,13 @@ body {
   font-family: 'Arsenal', sans-serif;
   /*font-weight: bolder;*/
   font-size: 26px;
-  background-color: #DFF8F0;
+  background: white;
+  background: -webkit-linear-gradient(left top, white, #65DFB9);
+  background: -o-linear-gradient(bottom right, white, #65DFB9);
+  background: -moz-linear-gradient(bottom right, white, #65DFB9);
+  background: linear-gradient(to bottom right, white, #65DFB9);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 button {
@@ -57,6 +67,26 @@ h4 {
 
 h5 {
   font-size: 22px;
+}
+
+.box {
+  margin-left: 30px;
+}
+
+.my-panel {
+  border-radius: 0px;
+  border: none;
+
+}
+
+html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+}
+body {
+    min-height: 100%;
+    margin: 0;
 }
 
 font-family: 'Inconsolata', monospace;
