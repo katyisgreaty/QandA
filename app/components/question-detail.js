@@ -7,10 +7,10 @@ export default Ember.Component.extend({
         this.sendAction('destroyQuestion', question);
       }
     },
-    saveAnswer(params) {
-      var newAnswer = this.store.createRecord('answer', params);
-      newAnswer.save();
-      this.transitionTo('question-detail');
-    },
+    // saveAnswer(params) {
+    //   var newAnswer = this.store.createRecord('answer', params);
+    //   newAnswer.save();
+    //   this.transitionTo('question-detail');
+    // },
   }
 });
