@@ -2,7 +2,8 @@
 <h2>For curious minds (and know-it-alls)</h2>
 
 Questions:
-
-<p>
-  will go here.
-</p>
+<ol>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ol>

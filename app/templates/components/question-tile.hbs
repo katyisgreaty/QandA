@@ -1,0 +1,9 @@
+<li>
+  <h3>{{question.content}}</h3>
+  <h4>Asked by:{{question.author}}</h4>
+  {{#if areNotesShowing }}
+    <p {{action 'notesHide'}}>{{question.notes}}</p>
+  {{else}}
+    <button {{action 'notesShow'}}>Show notes</button>
+  {{/if}}
+</li>
