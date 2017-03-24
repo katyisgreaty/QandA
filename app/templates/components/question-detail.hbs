@@ -1,18 +1,11 @@
 <h3>{{question.content}}</h3>
 <h5>Additional Notes: {{question.notes}}</h5>
 <h5>Asked by: {{question.author}}</h5>
-<div class="col-md-3">
-  {{update-question question=question update="update"}}
-  <button  id="delete-button" class="btn btn-danger" {{action  'delete' question}}>Delete Question</button>
-  {{new-tag saveTag="saveTag" question=model}}
-</div>
+<button {{action 'delete' question}}>Delete Question</button>
 
-
-<div class="row">
-  <h2> Answers </h2>
-  <ul>
-    {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer update="update" destroyAnswer="destroyAnswer"}}
-    {{/each}}
-  </ul>
-</div>
+<h2>Answers</h2>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>

@@ -10,15 +10,8 @@
 
 <h2> All Answers </h2>
 
-<div class="row">
-  <div class="col-md-6">
-
-    <ul>
-      {{#each model.answers as |answer|}}
-      <li>{{answer.content}} - by {{answer.author}}</li>
-      {{/each}}
-    </ul>
-
-    {{new-answer saveAnswer="saveAnswer"}}
-  </div>
-</div>
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer-tile answer=answer}}</li>
+  {{/each}}
+</ul>

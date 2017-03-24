@@ -7,22 +7,10 @@ export default Ember.Component.extend({
         this.sendAction('destroyQuestion', question);
       }
     },
-    update(answer, params) {
-      Object.keys(params).forEach(function(key) {
-        if(params[key]!==undefined) {
-          answer.set(key,params[key]);
-        }
-      });
-      answer.save();
-      this.transitionTo('question-detail');
-    },
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
       newAnswer.save();
       this.transitionTo('question-detail');
     },
-    destroyAnswer(answer) {
-      this.sendAction('destroyAnswer', answer);
-    }
   }
 });

@@ -2,11 +2,3 @@
   <h4>{{answer.content}}</h4>
   <h5>-{{answer.author}}</h5>
 </li>
-<div class="row">
-  <div class="col-md-3">
-    <button class="btn" {{action 'delete' answer}}>Delete Answer</button>
-  </div>
-  <div class="col-md-9">
-    {{update-answer answer=answer update="update"}}
-  </div>
-</div>
