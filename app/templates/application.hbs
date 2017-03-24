@@ -1,5 +1,18 @@
 <nav id="navigation" class="navbar navbar-default">
-  {{#link-to 'index' class="nav-home"}}<span class="links puddle">Qs and As</span>{{/link-to}}
+  <div class="row">
+    <!-- <div class="col-md-2">
+      {{#link-to 'index' class="nav-home"}}<img src="https://watson-qa-demo.mybluemix.net/images/question-and-answer.svg" alt="question and answer dialogue bubbles"/>{{/link-to}}
+    </div> -->
+    <div class="col-md-4 col-sm-1">
+      {{#link-to 'index' class="nav-home"}}
+        <img id="curious" src="https://s-media-cache-ak0.pinimg.com/originals/08/3a/42/083a42b6b9952c5c805c91000a86bbf1.png" alt="curious cat photo" />
+      {{/link-to}}
+    </div>
+    <div class="col-md-8 col-sm-11" id="title">
+      <h1><span class="links title">Killing the Cat</span></h1>
+      <h3 id="subtitle" class="title">...with curiosity</h3>
+    </div>
+  </div>
 </nav>
 <div class="container">
   {{outlet}}
