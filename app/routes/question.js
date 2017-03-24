@@ -14,14 +14,10 @@ export default Ember.Route.extend({
       question.save();
       this.transitionTo('index');
     },
-    saveRental3(params) {
-      var newRental = this.store.createRecord('rental', params);
-      newRental.save();
-      this.transitionTo('index');
-    },
     destroyQuestion(question) {
       question.destroyRecord();
       this.transitionTo('index');
     }
   }
+
 });

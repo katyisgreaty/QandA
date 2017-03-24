@@ -1,11 +1,11 @@
 <li>
-  <h3>{{question.content}}</h3>
+  {{#link-to 'question' question.id}}
+    <h3>{{question.content}}</h3>
+  {{/link-to}}
   <h4>Asked by: {{question.author}}</h4>
   {{#if areNotesShowing }}
     <p {{action 'notesHide'}}>{{question.notes}}</p>
   {{else}}
     <button {{action 'notesShow'}}>Show notes</button>
   {{/if}}
-  {{update-question question=question update="update"}}
-  <button {{action 'delete' question}}>Delete Question</button>
 </li>
