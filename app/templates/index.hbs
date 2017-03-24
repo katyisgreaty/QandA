@@ -1,0 +1,10 @@
+<h1>Qs and As</h1>
+<h2>For curious minds (and know-it-alls)</h2>
+
+Questions:
+
+<ol>
+  {{#each model as |question|}}
+    {{question-tile question=question destroyQuestion="destroyQuestion"}}
+  {{/each}}
+</ol>
